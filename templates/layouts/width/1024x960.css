@@ -1,0 +1,90 @@
+/* 1024x960 Core CSS Document
+Contains all general layout rules
+based on Matthew James Taylor's Perfect CSS Layouts
+http://matthewjamestaylor.com
+Modified by Bogatabeav for ezRPG
+http://sunofloki.com
+*/
+
+body {
+	margin:0;
+	padding:0;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	width:100%;
+	min-width:600px;    	/* Minimum width of layout - remove line if not required */
+	text-align:center;
+}
+
+#wrapper {
+	margin-top: 5px;
+	width: 1007px;
+   	margin-left: auto;
+  	margin-right: auto;
+  	text-align:left;
+}
+
+/* Header styles */
+#header {
+	clear:both;
+	float:left;
+	width:100%;
+	padding-top: 5px;
+
+}
+
+/* 'widths' sub menu */
+#layoutdims {
+	clear:both;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:right;
+}
+
+/* column container */
+.colmask {
+	position:relative;		/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;				/* width of whole page */
+	overflow:hidden;			/* This chops off any overhanging divs */
+}
+
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	clear:both;
+	float:left;
+	width:100%;				/* width of page */
+	position:relative;
+}
+
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;		/* no left and right padding on columns, we just make them narrower instead 						only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+padding: .5%;
+
+}
+
+/* Footer styles */
+#footer {
+	clear:both;
+	float: left;
+	width:100%;
+}
+
+#footer-text
+{
+	width: 100%;
+	position: relative;
+	padding: 5px 0px 5px 0px;
+}
+
+
+#footer p {
+	padding:10px;
+	margin:0;
+}

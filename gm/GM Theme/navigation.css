@@ -1,0 +1,23 @@
+#navv{vertical-align:top; text-align:left; padding:5px 5px 5px 5px; }
+.navv .header{display:block; margin:-0.8em 0em 0em 0em; padding:0.5em 0.7em 0.2em 0.4em; background-color:#eff2f3; text-transform:uppercase; text-decoration:none; font-weight:bold; color:#555; border-bottom:solid 0.1em #dfdfdf; border-left:solid 0.1em #dfdfdf; border-right:solid 0.1em #dfdfdf}
+.navv .header:hover{background-color:#eff2f3; text-decoration:none; color:#555}
+.navv li a{border-left:1px solid #dfdfdf; border-right:1px solid #dfdfdf; display:block; background-color:#eff2f3; text-decoration:none; font-weight:normal; color:#555; height:1.3em; padding:0.3em 0.7em 0.2em 1em; text-transform:capitalize}
+.navv li a:hover{border-left:1px solid #fff; border-right:1px solid #fff; display:block; background-color:#fff; text-decoration:none; font-weight:normal; height:1.3em; padding-top:0.3em 0.7em 0.2em 1em; text-transform:capitalize}
+.navv ul{padding:0em; margin:0em; list-style:none}
+.navv li{}
+#navv-top{background-image:url(images/link-top.gif); background-repeat:repeat-x; height:11px; width:100%}
+#navv-top-left{background-image:url(images/link-tl.gif); background-repeat:no-repeat; float:left; height:11px; width:11px; z-index:10; margin-left:0px}
+#navv-top-right{background-image:url(images/link-tr.gif); background-repeat:no-repeat; float:right; height:11px; width:11px; z-index:10; margin-right:0px}
+#navv-bottom-left{background-image:url(images/link-bl.gif); background-repeat:no-repeat; float:left; height:11px; width:11px; z-index:10; margin-left:0px}
+#navv-bottom-right{background-image:url(images/link-br.gif); background-repeat:no-repeat; float:right; height:11px; width:11px; z-index:10; margin-right:0px}
+#navv-bottom{background-image:url(images/link-bottom.gif); background-repeat:repeat-x; height:11px; width:100%; margin-bottom:5px}
+
+#navh{text-align:center}
+.navh ul{padding:0; margin:0 auto; _margin:0; list-style-type:none; border-top:solid 0.1em #dfdfdf; border-bottom:solid 0.1em #dfdfdf}
+.navh li ul{display:none; position:absolute; margin-top:2px; margin-left:-.3em; _margin-top:1.45em; _left:.2em; width:8.5em; _width: 8em; border-top:solid 0.1em #dfdfdf; border-bottom:solid 0.1em #dfdfdf}
+.navh li>ul{top:auto; left:0 auto}
+.navh .header{display:inline-block; _display:inline; position:relative; width:8em; z-index:200; border-left:solid 1px #dfdfdf; border-right:solid 1px #dfdfdf; font-weight:bold; color:#555; padding:0.2em; background-color:#eff2f3}
+.navh li a{display:inline-block; _display:inline; position:relative; width:8em; z-index:200; background-color:#eff2f3; font-weight:bold; color:#555; padding:.2em; text-decoration:none; font-weight:normal; border-right:solid 0.1em #dfdfdf; border-left:solid 0.1em #dfdfdf}
+.navh li a:hover{color:#5591ca}
+.navh li:hover ul, .navh li.over ul{display:block}
+

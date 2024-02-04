@@ -1,0 +1,5 @@
+/* 2 Column, Left Sidebar, Without Horizontal Menu CSS Document*/
+.leftmenu {}
+.leftmenu .colleft {right:80%;}
+.leftmenu .col1 {width:76.8%;_width: 77.5%;left:101.5%;_left: 101.2%;}
+.leftmenu .col2 {width:18%;_width: 18.2%;left:3.2%;_left: 3.4%;}

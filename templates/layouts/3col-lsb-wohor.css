@@ -1,0 +1,7 @@
+/* 3 Column, Left Sidebar, Without Horizontal Menu CSS Document*/
+.threecol {}
+.threecol .colmid {right:20.5%;}
+.threecol .colleft {right:60%;}
+.threecol .col1 {width:58%;left:100.7%;_left: 101.2%;}
+.threecol .col2 {width:18%;left:21.9%;_left: 23.5%;}
+.threecol .col3 {width:18%;left:82.6%;_left: 85.4%; }

@@ -1,0 +1,14 @@
+/* Fluid 100% Core CSS Document
+Contains all general layout rules
+Modified by Bogatabeav for ezRPG
+http://sunofloki.com
+*/
+body {margin:0;padding:0;border:0;width:100%;min-width:600px;text-align:center;}
+#wrapper {margin-top: 5px;width: 80%;margin-left: auto;margin-right: auto;text-align:left;}
+#header {clear:both;float:left;width:100%;padding-top: 5px;}
+.colmask {position:relative;clear:both;float:left;width:100%;overflow:hidden;}
+.colright,.colmid,.colleft {clear:both;float:left;width:100%;position:relative;}
+.col1,.col2,.col3 {float:left;position:relative;overflow:hidden;padding: .5%;}
+#footer {clear:both;float: left;width:100%;}
+#footer-text {width: 100%;position: relative;padding: 5px 0px 5px 0px;}
+#footer p {padding:10px;margin:0;}
