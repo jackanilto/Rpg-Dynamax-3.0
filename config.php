@@ -5,10 +5,10 @@
 /*    http://www.ezrpgproject.com    */
 /*************************************/
 $config_server = "localhost"; //Database host
-$config_database = "database name"; //Database name
-$config_username = "username"; //Database username
-$config_password = "password"; //Database password
-$secret_key = "mysecret"; //Secret key, make it a random word/sentence/whatever
+$config_database = "ingressafacil_ogamexyz"; //Database name
+$config_username = "ingressafacil_ogamexyz"; //Database username
+$config_password = "ogamexyzogamexyz"; //Database password
+$secret_key = "142536"; //Secret key, make it a random word/sentence/whatever
 $config_language = "en"; //Language of the game
 $config_name = "ezRPG DynaMax"; //Name of your game
 //Do not edit below this line
