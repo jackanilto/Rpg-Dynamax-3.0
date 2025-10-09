@@ -146,7 +146,7 @@ $lang['msg_attack_player'] = "Attack a player";
 
 //---------------------------
 //Home
-$lang['msg_spend_statpoints'] = "<i>You have <b>$d</b> stat points to spend!<br />\n<a href=\"stat_points.php\">Spend them here</a></i>";
+$lang['msg_spend_statpoints'] = "<i>You have <b>%d</b> stat points to spend!<br />\n<a href=\"stat_points.php\">Spend them here</a></i>";
 
 //---------------------------
 //Hospital

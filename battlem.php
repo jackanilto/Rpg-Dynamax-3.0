@@ -1,4 +1,9 @@
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 /*************************************/
 /*           ezRPG script            */
 /*         Written by Zeggy          */
@@ -8,14 +13,16 @@ require_once("lib.php");
 define("PAGENAME", $lang['page_battle']);
 $player = check_user($secret_key, $db, $setting);
 
-switch($_GET['act']) {
-	case "attack":
-		if (!$_GET['username']) { //No username entered 
-			header("Location: battle.php");
-			break;
-		}
+$act = isset($_GET['act']) ? $_GET['act'] : ''; // define variável segura
+
+switch ($act) {
+    case "attack":
+        if (empty($_GET['username'])) { // Verifica se username existe
+            header("Location: battlem.php");
+            exit;
+        }
 		//Otherwise, get player data:
-		$query = $db->execute("select * from `players` where `username`=?", array($_GET['username']));
+		$query = $db->execute("select * from `monsters` where `username`=?", array($_GET['username']));
 		if ($query->recordcount() == 0) { //Player doesn't exist
 			require_once("templates/themes/" . $setting->theme . "/private_header.php");
 			echo $lang['error_no_user'];
@@ -23,6 +30,7 @@ switch($_GET['act']) {
 			break;
 		}
 		$enemy1 = $query->fetchrow(); //Get player info
+		$enemy = new stdClass();
 		foreach($enemy1 as $key=>$value) {
 			$enemy->$key = $value;
 		}
@@ -243,7 +251,7 @@ switch($_GET['act']) {
 		$_GET['fromlevel'] = ($_GET['fromlevel'] == 0)?"":$_GET['fromlevel'];
 		$_GET['tolevel'] = ($_GET['tolevel'] == 0)?"":$_GET['tolevel'];
 		//Construct query
-		$query = "select `id`, `username`, `hp`, `maxhp`, `level` from `players` where `id`!= ? and ";
+		$query = "select `id`, `username`, `hp`, `maxhp`, `level` from `monsters` where `id`!= ? and ";
 		$query .= ($_GET['username'] != "")?"`username` LIKE  ? and ":"";
 		$query .= ($_GET['fromlevel'] != "")?"`level` >= ? and ":"";
 		$query .= ($_GET['tolevel'] != "")?"`level` <= ? and ":"";
@@ -266,7 +274,7 @@ switch($_GET['act']) {
 		//Display search form again
 		echo "<fieldset>\n";
 		echo "<legend><b>" . $lang['msg_player_search'] . "</b></legend>\n";
-		echo "<form method=\"get\" action=\"battle.php\">\n<input type=\"hidden\" name=\"act\" value=\"search\" />\n";
+		echo "<form method=\"get\" action=\"battlem.php\">\n<input type=\"hidden\" name=\"act\" value=\"search\" />\n";
 		echo "<table width=\"100%\">\n";
 		echo "<tr>\n<td width=\"40%\">" . $lang['keyword_username'] . ":</td>\n<td width=\"60%\"><input type=\"text\" name=\"username\" value=\"" . stripslashes($_GET['username']) . "\" /></td>\n</tr>\n";
 		echo "<tr>\n<td width=\"40%\">" . $lang['keyword_level'] . "</td>\n<td width=\"60%\"><input type=\"text\" name=\"fromlevel\" size=\"4\" value=\"" . stripslashes($_GET['fromlevel']) . "\" /> to <input type=\"text\" name=\"tolevel\" size=\"4\" value=\"" . stripslashes($_GET['tolevel']) . "\" /></td>\n</tr>\n";
@@ -288,7 +296,7 @@ switch($_GET['act']) {
 				echo "<tr class=\"row" . $bool . "\">\n";
 				echo "<td width=\"50%\"><a href=\"profile.php?username=" . $result['username'] . "\">" . $result['username'] . "</a></td>\n";
 				echo "<td width=\"20%\">" . $result['level'] . "</td>\n";
-				echo "<td width=\"30%\"><a href=\"battle.php?act=attack&username=" . $result['username'] . "\">" . $lang['keyword_attack'] . "</a></td>\n";
+				echo "<td width=\"30%\"><a href=\"battlem.php?act=attack&username=" . $result['username'] . "\">" . $lang['keyword_attack'] . "</a></td>\n";
 				echo "</tr>\n";
 				$bool = ($bool==1)?2:1;
 			}
@@ -305,7 +313,7 @@ switch($_GET['act']) {
 		//The default battle page, giving choice of whether to search for players or to target one
 		echo "<fieldset>\n";
 		echo "<legend><b>" . $lang['msg_player_search'] . "</b></legend>\n";
-		echo "<form method=\"get\" action=\"battle.php\">\n<input type=\"hidden\" name=\"act\" value=\"search\" />\n";
+		echo "<form method=\"get\" action=\"battlem.php\">\n<input type=\"hidden\" name=\"act\" value=\"search\" />\n";
 		echo "<table width=\"100%\">\n";
 		echo "<tr>\n<td width=\"40%\">" . $lang['keyword_username'] . ":</td>\n<td width=\"60%\"><input type=\"text\" name=\"username\" /></td>\n</tr>\n";
 		echo "<tr>\n<td width=\"40%\">" . $lang['keyword_level'] . "</td>\n<td width=\"60%\"><input type=\"text\" name=\"fromlevel\" size=\"4\" /> to <input type=\"text\" name=\"tolevel\" size=\"4\" /></td>\n</tr>\n";
@@ -316,7 +324,7 @@ switch($_GET['act']) {
 		echo "<br /><br />\n";
 		echo "<fieldset>\n";
 		echo "<legend><b>" . $lang['msg_attack_player'] . "</b></legend>\n";
-		echo "<form method=\"get\" action=\"battle.php?act=attack\">\n<input type=\"hidden\" name=\"act\" value=\"attack\" />\n";
+		echo "<form method=\"get\" action=\"battlem.php?act=attack\">\n<input type=\"hidden\" name=\"act\" value=\"attack\" />\n";
 		echo $lang['keyword_username'] . ":&nbsp;&nbsp;&nbsp;<input type=\"text\" name=\"username\" /><br />\n";
 		echo "<input type=\"submit\" value=\"" . $lang['keyword_battle'] . "!\" />\n";
 		echo "</form>\n";

@@ -6,12 +6,15 @@
 /*************************************/
 
 //Function to check if user is logged in, and if so, return user data as an object
-function check_user($secret_key, &$db) {
-	$ip = isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR'];
-	if (!isset($_SESSION['userid']) || !isset($_SESSION['hash'])) {
-		header("Location: index.php");
-		exit;
-	} else {
+//$player = check_user($secret_key, $db, $setting);
+
+// Dentro do arquivo functions.php:
+function check_user($secret_key, &$db, &$setting = null) {
+    $ip = isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR'];
+    if (!isset($_SESSION['userid']) || !isset($_SESSION['hash'])) {
+        header("Location: index.php");
+        exit;
+    } else {
 		$check = sha1($_SESSION['userid'] . $ip . $secret_key);
 		if ($check != $_SESSION['hash']) {
 			session_unset();
@@ -27,17 +30,22 @@ function check_user($secret_key, &$db) {
 				header("Location: logout.php");
 				exit;
 			}
-			foreach($userarray as $key=>$value) {
-				$user->$key = $value;
-			}	
+			$user = new stdClass(); // já está correto
+            if (is_array($userarray)) {
+                foreach($userarray as $key=>$value) {
+                    $user->$key = $value;
+                }
+            }
 			//Check if game is closed or not
-			if ($setting->general_close_game == "yes" && $user->gm_rank <= 20) {
-				//Clear user's session data
-				session_unset();
-				session_destroy();
-				header("Location: index.php");
-			}
-			if ($player->ban >= time()) {
+            if (is_object($setting) && is_object($user)) {
+                if ($setting->general_close_game == "yes" && $user->gm_rank <= 20) {
+                    session_unset();
+                    session_destroy();
+                    header("Location: index.php");
+                    exit;
+                }
+            }
+			if ($user->ban >= time()) {
 				//Clear user's session data
 				session_unset();
 				session_destroy();
@@ -51,15 +59,16 @@ function check_user($secret_key, &$db) {
 //Gets the number of unread messages
 function unread_messages($id, &$db) {
 	$query = $db->getone("select count(*) as `count` from `mail` where `to`=? and `status`='unread'", array($id));
-	return $query['count'];
+	return $query;
 }
 //Gets new log messages
 function unread_log($id, &$db) {
 	$query = $db->getone("select count(*) as `count` from `user_log` where `player_id`=? and `status`='unread'", array($id));
-	return $query['count'];
+	return $query;
 }
 //Insert a log message into the user logs
-function addlog($id, $msg, &$db) {
+function addlog($id, $msg) {
+    global $db;
 	$insert['player_id'] = $id;
 	$insert['msg'] = $msg;
 	$insert['time'] = time();
@@ -80,7 +89,7 @@ function gmlog($msg, &$db) {
 //Insert addin_modules
 function insert_addins ($position, &$player, &$setting, &$lang, &$db) {
 	$query = $db->execute("select * from `addins` where `position`=? order by `ord`", array($position));
-	if ($query > 0) {
+	if ($query->recordcount() > 0) {
 		while ($addin_modules = $query->fetchrow()) {
 			 include ("addins/" . $addin_modules['link'] . "");
 		}

@@ -10,7 +10,7 @@ session_start();
 include("../config.php");
 
 include('../lib/adodb/adodb.inc.php'); //Include adodb files
-$db = &ADONewConnection('mysql'); //Connect to database
+$db = &ADONewConnection('mysqli'); //Connect to database
 $db->Connect($config_server, $config_username, $config_password, $config_database); //Select table
 
 $db->SetFetchMode(ADODB_FETCH_ASSOC); //Fetch associative arrays

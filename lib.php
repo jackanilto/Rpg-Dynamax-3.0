@@ -8,7 +8,7 @@ session_start();
 require_once('config.php');
 require_once('lib/functions.php');
 require_once('lib/adodb/adodb.inc.php'); //Include adodb files
-$db = &ADONewConnection('mysql'); //Connect to database
+$db = ADONewConnection('mysqli'); //Connect to database
 $db->Connect($config_server, $config_username, $config_password, $config_database); //Select table
 $db->SetFetchMode(ADODB_FETCH_ASSOC); //Fetch associative arrays
 $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC; //Fetch associative arrays
@@ -22,6 +22,7 @@ if (file_exists($language_include)) {
 	require_once("lib/languages/en.php"); //Include default language file
 }
 //Get all game settings
+$setting = new stdClass(); // Adicione antes do while
 $query = $db->execute("select `name`, `value` from `settings`");
 while ($set = $query->fetchrow()) {
 	$setting->$set['name'] = $set['value'];
