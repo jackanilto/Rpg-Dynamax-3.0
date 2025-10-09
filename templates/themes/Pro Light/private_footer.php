@@ -12,8 +12,10 @@
     <div id="bottom-right">
     </div>
 </div>
-	<div id="footer-text">Copyright (c) 2008, <a href="http://www.ezrpgproject.com/">ezRPG Project</a></div>
-	</div>
+<div id="footer-text">
+    Copyright (c) 2008-<?php echo date("Y"); ?>, 
+    <a href="http://www.ezrpgproject.com/">ezRPG Project MOD by Janiltojack</a>
+</div>
 </div>
 </div>
 </body>

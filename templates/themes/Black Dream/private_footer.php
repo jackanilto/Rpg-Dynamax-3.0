@@ -6,8 +6,10 @@
 	insert_addins(3, $player, $setting, $lang, $db); }?>
 <?php require_once($current_close);?>
 <div id="footer">
-	<div id="footer-text">Copyright (c) 2008, <a href="http://www.ezrpgproject.com/">ezRPG Project</a></div>
-	</div>
+<div id="footer-text">
+    Copyright (c) 2008-<?php echo date("Y"); ?>, 
+    <a href="http://www.ezrpgproject.com/">ezRPG Project MOD by Janiltojack</a>
+</div>
 </div>
 </body>
 </html>

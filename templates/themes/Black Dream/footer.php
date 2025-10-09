@@ -10,7 +10,10 @@
 <ul><li><a href="http://www.ezrpgproject.com/">ezRPG Project</a></li>
 </ul></ul></div>
 </div></div></div><div id="footer">
-<div id="footer-text">Copyright (c) 2008, <a href="http://www.ezrpgproject.com/">ezRPG Project</a></div>
+<div id="footer-text">
+    Copyright (c) 2008-<?php echo date("Y"); ?>, 
+    <a href="http://www.ezrpgproject.com/">ezRPG Project MOD by Janiltojack</a>
+</div>
 </div>
 </div>
 </body>
