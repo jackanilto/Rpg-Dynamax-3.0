@@ -1,5 +1,6 @@
 <html>
 <head>
+    <meta charset="utf-8">
 <title><?=$config_name?>: <?=PAGENAME?></title>
 <link rel="stylesheet" type="text/css" href="templates/layouts/width/<?=$setting->width?>.css" />
 <link rel="stylesheet" type="text/css" href="templates/layouts/2col-lsb-wohor.css" />

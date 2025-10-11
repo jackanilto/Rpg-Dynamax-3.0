@@ -549,3 +549,57 @@
 [08-Oct-2025 23:11:51 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 63
 [08-Oct-2025 23:11:51 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 108
 [08-Oct-2025 23:11:51 America/Sao_Paulo] PHP Notice:  Undefined index: updatetheme in /home/ingressafacil/public_html/gm/themes.php on line 20
+[10-Oct-2025 23:43:18 America/Sao_Paulo] PHP Strict Standards:  Only variables should be assigned by reference in /home/ingressafacil/public_html/gm/lib.php on line 13
+[10-Oct-2025 23:43:18 America/Sao_Paulo] PHP Notice:  Undefined variable: d in /home/ingressafacil/public_html/languages/en.php on line 148
+[10-Oct-2025 23:43:18 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 63
+[10-Oct-2025 23:43:18 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 108
+[10-Oct-2025 23:43:18 America/Sao_Paulo] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ingressafacil/public_html/gm/index.php on line 15
+[10-Oct-2025 23:43:18 America/Sao_Paulo] PHP Warning:  file_get_contents(http://ezrpg.bbgamezone.com/latest_version.txt): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ingressafacil/public_html/gm/index.php on line 15
+[10-Oct-2025 23:43:24 America/Sao_Paulo] PHP Strict Standards:  Only variables should be assigned by reference in /home/ingressafacil/public_html/gm/lib.php on line 13
+[10-Oct-2025 23:43:24 America/Sao_Paulo] PHP Notice:  Undefined variable: d in /home/ingressafacil/public_html/languages/en.php on line 148
+[10-Oct-2025 23:43:24 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 63
+[10-Oct-2025 23:43:24 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 108
+[10-Oct-2025 23:43:24 America/Sao_Paulo] PHP Notice:  Undefined index: updatetheme in /home/ingressafacil/public_html/gm/themes.php on line 20
+[11-Oct-2025 00:39:27 America/Sao_Paulo] PHP Strict Standards:  Only variables should be assigned by reference in /home/ingressafacil/public_html/gm/lib.php on line 13
+[11-Oct-2025 00:39:27 America/Sao_Paulo] PHP Notice:  Undefined variable: d in /home/ingressafacil/public_html/languages/en.php on line 148
+[11-Oct-2025 00:39:27 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 63
+[11-Oct-2025 00:39:27 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 108
+[11-Oct-2025 00:39:27 America/Sao_Paulo] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ingressafacil/public_html/gm/index.php on line 15
+[11-Oct-2025 00:39:27 America/Sao_Paulo] PHP Warning:  file_get_contents(http://ezrpg.bbgamezone.com/latest_version.txt): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ingressafacil/public_html/gm/index.php on line 15
+[11-Oct-2025 00:39:34 America/Sao_Paulo] PHP Strict Standards:  Only variables should be assigned by reference in /home/ingressafacil/public_html/gm/lib.php on line 13
+[11-Oct-2025 00:39:34 America/Sao_Paulo] PHP Notice:  Undefined variable: d in /home/ingressafacil/public_html/languages/en.php on line 148
+[11-Oct-2025 00:39:34 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 63
+[11-Oct-2025 00:39:34 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 108
+[11-Oct-2025 00:39:34 America/Sao_Paulo] PHP Notice:  Undefined index: action in /home/ingressafacil/public_html/gm/config.php on line 24
+[11-Oct-2025 00:39:39 America/Sao_Paulo] PHP Strict Standards:  Only variables should be assigned by reference in /home/ingressafacil/public_html/gm/lib.php on line 13
+[11-Oct-2025 00:39:39 America/Sao_Paulo] PHP Notice:  Undefined variable: d in /home/ingressafacil/public_html/languages/en.php on line 148
+[11-Oct-2025 00:39:39 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 63
+[11-Oct-2025 00:39:39 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 108
+[11-Oct-2025 00:39:39 America/Sao_Paulo] PHP Strict Standards:  Only variables should be assigned by reference in /home/ingressafacil/public_html/gm/lib.php on line 13
+[11-Oct-2025 00:39:39 America/Sao_Paulo] PHP Notice:  Undefined variable: d in /home/ingressafacil/public_html/languages/en.php on line 148
+[11-Oct-2025 00:39:39 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 63
+[11-Oct-2025 00:39:39 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 108
+[11-Oct-2025 00:39:39 America/Sao_Paulo] PHP Notice:  Undefined index: action in /home/ingressafacil/public_html/gm/config.php on line 24
+[11-Oct-2025 00:41:33 America/Sao_Paulo] PHP Strict Standards:  Only variables should be assigned by reference in /home/ingressafacil/public_html/gm/lib.php on line 13
+[11-Oct-2025 00:41:33 America/Sao_Paulo] PHP Notice:  Undefined variable: d in /home/ingressafacil/public_html/languages/en.php on line 147
+[11-Oct-2025 00:41:33 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 63
+[11-Oct-2025 00:41:33 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 108
+[11-Oct-2025 00:41:33 America/Sao_Paulo] PHP Notice:  Undefined index: action in /home/ingressafacil/public_html/gm/config.php on line 24
+[11-Oct-2025 00:41:41 America/Sao_Paulo] PHP Strict Standards:  Only variables should be assigned by reference in /home/ingressafacil/public_html/gm/lib.php on line 13
+[11-Oct-2025 00:41:41 America/Sao_Paulo] PHP Notice:  Undefined variable: d in /home/ingressafacil/public_html/languages/en.php on line 147
+[11-Oct-2025 00:41:41 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 63
+[11-Oct-2025 00:41:41 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 108
+[11-Oct-2025 00:41:42 America/Sao_Paulo] PHP Strict Standards:  Only variables should be assigned by reference in /home/ingressafacil/public_html/gm/lib.php on line 13
+[11-Oct-2025 00:41:42 America/Sao_Paulo] PHP Notice:  Undefined variable: d in /home/ingressafacil/public_html/languages/en.php on line 147
+[11-Oct-2025 00:41:42 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 63
+[11-Oct-2025 00:41:42 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 108
+[11-Oct-2025 00:41:42 America/Sao_Paulo] PHP Notice:  Undefined index: action in /home/ingressafacil/public_html/gm/config.php on line 24
+[11-Oct-2025 00:43:27 America/Sao_Paulo] PHP Strict Standards:  Only variables should be assigned by reference in /home/ingressafacil/public_html/gm/lib.php on line 13
+[11-Oct-2025 00:43:27 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ingressafacil/public_html/languages/en.php on line 198
+[11-Oct-2025 00:43:31 America/Sao_Paulo] PHP Strict Standards:  Only variables should be assigned by reference in /home/ingressafacil/public_html/gm/lib.php on line 13
+[11-Oct-2025 00:43:31 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ingressafacil/public_html/languages/en.php on line 198
+[11-Oct-2025 00:44:59 America/Sao_Paulo] PHP Strict Standards:  Only variables should be assigned by reference in /home/ingressafacil/public_html/gm/lib.php on line 13
+[11-Oct-2025 00:44:59 America/Sao_Paulo] PHP Notice:  Undefined variable: d in /home/ingressafacil/public_html/languages/en.php on line 147
+[11-Oct-2025 00:44:59 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 63
+[11-Oct-2025 00:44:59 America/Sao_Paulo] PHP Warning:  Creating default object from empty value in /home/ingressafacil/public_html/gm/lib.php on line 108
+[11-Oct-2025 00:44:59 America/Sao_Paulo] PHP Notice:  Undefined index: action in /home/ingressafacil/public_html/gm/config.php on line 24

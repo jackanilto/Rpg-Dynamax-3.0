@@ -19,7 +19,7 @@ O repositório **Rpg-Dynamax-3.0** está sendo repostado com o intuito de estudo
 ## ⚙️ Como Rodar o Projeto
 
 ### Requisitos
-- **PHP**: 5.6 ou superior.
+- **PHP**: 7.4 ou superior.
 - **Servidor Web**: Apache, Nginx ou similar.
 
 ### Instalação
